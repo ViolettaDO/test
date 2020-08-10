@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/selectors.css">
+</head>
+<body>
+    Селектор типа
+    <section class="type-selector">
+        <h1>ЭТОТ h1 нижним регистром</h1>
+        <h2>Это заголовок будет подчеркнутым</h2>
+    </section>
+    Селектор класса
+    <section class="class-selector">
+        <p class="description">
+            Этот текст стилизован  с использования  селектора типа класса
+        </p>
+        <blockquote class="description">
+            На странице можент быть несколько тегов
+        </blockquote>
+    </section>
+    Несколько классов на элементе
+    <section class="more-class-selector">
+        <p class="description">
+            У нас здесь 1 класс
+        </p>
+        <p class="pp-description">
+            У нас здесь другой класс
+        </p>
+        <p class="description pp-description">
+            У нас здесь оба класса
+        </p>
+    </section>
+    Селектор ID
+    <section class="id-selector">
+        <p id="one">
+            Один
+        </p>
+    </section>
+    Селектор id+Class
+    <section class="id-class-selector">
+        <p class="one">
+           Class
+        </p>
+        <p id="one" class="one">
+           id+Class
+        </p>
+    </section>
+    Селектор потомков
+    <section class="potomok-selector">
+        <ul class="menu">
+            <li>
+                <a href="">Ссылка1</a>
+            </li>
+            <li>
+                <a href="">Ссылка2</a>
+            </li>
+        </ul>
+
+        <ul class="menu2">
+            <li>
+                <a href="">Ссылка1</a>
+            </li>
+            <li>
+                <a href="">Ссылка2</a>
+            </li>
+        </ul>
+    </section>
+    Дочерний селектор
+    <section class="daughter-selector">
+        <div class="menu3">
+            <a href="">Ссылка3</a>
+            <ul>
+                <li>
+                    <a href="">Ссылка1</a>
+                </li>
+                <li>
+                    <a href="">Ссылка2</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    Сестринский селектор
+    <section class="sister-selector">
+        <p class="description">
+            Тут у нас класс description
+        </p>
+
+        <h3>Перед этим текстом есть заголовок </h3>
+        
+        <p class="description">
+            Тут у нас класс description
+        </p>
+
+        <h3>Перед этим текстом тоже есть заголовок</h3>
+        
+        <div>
+            <p class="description">
+                Тут у нас тоже класс description, но племяница
+            </p> 
+        </div>
+        
+        <p id="mistake" class="description">
+            Тут у нас класс description, но не соседний элемент
+        </p> 
+    </section>
+    Селектор смежных элементов
+    <section class="sosed-selector">
+        <p class="description">
+            Тут у нас класс description
+        </p>
+
+        <h3>Перед этим текстом есть заголовок </h3>
+        
+        <p class="description">
+            Тут у нас класс description
+        </p>
+
+        <h3>Перед этим текстом тоже есть заголовок</h3>
+        
+        <div>
+            <p class="description">
+                Тут у нас тоже класс description, но племяница
+            </p> 
+        </div>
+        
+        <p id="mistake" class="description">
+            Тут у нас класс description, но не соседний элемент
+        </p> 
+    </section>
+    Группирующий селектор
+    <section class="group-selector">
+        <h1>ЭТОТ h1</h1>
+        <h2>Этот h2</h2>
+        <h3>И этот h3 синего цвета</h3>
+    </section>
+    Селектор атрибутов с универсальным правилом
+    <section class="attribute-selector">
+        <input type="text" value="инпут"> 
+        <input type="button" value="кнопка1">
+        <input class="button" type="textarea">
+        <input class="button" data-foo="bazz">
+
+        <a href="" > Ссылка1</a>
+        <a href="" data-name="dd" data-col="2"> Ссылка2</a>
+    
+        <a href="" data-name="aa dc" data-col="2"> Ссылка4</a>
+        <a href="" data-name="ddaf" data-col="2"> Ссылка5</a>
+    
+        <a href="" data-name="avccs" data-col="2"> Ссылка6</a>
+    
+    </section>    
+</body>
+</html>

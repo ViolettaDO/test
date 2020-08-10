@@ -1,0 +1,76 @@
+section {
+    border: 1px  solid blue;
+}
+
+
+/* При наведении 
+a:hover{
+    font-size: 40px;
+}*/
+
+/*Не переходили по ней*/
+.link-selector a:link{
+ color: red;
+}
+
+/*Переходили по ней*/
+.link-selector a:visited{
+    color: green;
+}
+
+/*В момент нажатия
+a:active{
+    color: blue;
+}*/
+
+/*В момент нажатия*/
+.link-selector a:active:hover{
+    color: blue;
+    font-size: 40px;
+}
+
+.hover-selector div:hover{
+    font-size: 40px;
+}
+.hover-selector div:hover::after{
+    content: "Привет, я ::after";
+    display: block;
+    color: green;
+    text-align: center;
+}
+
+.first-last-selector :first-child {
+    background-color: greenyellow;
+}
+.first-last-selector :last-child {
+    border: 2px dotted red;
+}
+.first-last-selector :first-of-type {
+    text-decoration: underline;
+}
+.first-last-selector :last-of-type {
+    font-style: italic;
+}
+.first-last-selector :nth-child(3n + 1) {
+    color: green;
+}
+
+ /*НЕ ТО что записано в скобках */
+.not-selector p:not(.nottt) {
+    color: red;
+}
+.not-selector :not(p) {
+    color: green;
+}
+
+/*перед*/
+.before-after-selector p::before{
+    content: 'вот тут у нас before - перед ';
+    color:red;
+}
+
+/*после*/
+.before-after-selector p::after{
+    content: 'вот тут у нас after -после';
+    color: blue;
+}

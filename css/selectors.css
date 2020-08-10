@@ -1,0 +1,144 @@
+section {
+    border: 1px  solid blue;
+}
+/*
+Селектор типа
+*/
+.type-selector h2{
+    text-transform: lowercase;
+}
+.type-selector h2 {
+    text-decoration: underline;
+}
+
+/*
+Селектор класса
+*/
+.class-selector .description{
+    color: blue;
+}
+/*
+Несколько классов на элементе
+*/
+.more-class-selector .description{
+    color:red;
+}
+.more-class-selector .pp-description {
+    text-decoration: underline;
+}
+.more-class-selector .description.pp-description {
+    font-size: 15px;
+}
+/*
+Обращение к элементу с идентификатором id
+*/
+.id-selector #one {
+    color: coral;
+}
+/*
+Обращение к элементу с идентификатором и классом
+*/
+.id-class-selector .one{
+    color: darkgreen;
+}
+.id-class-selector #one.one {
+    font-size: 50px;
+}
+/*
+Селектор потомков
+*/
+.potomok-selector .menu li a{
+    font-size: 80px;
+    color: royalblue;
+}
+
+.potomok-selector .menu2 li a{
+    font-size: 50px;
+    color: rebeccapurple;
+}
+/*
+Дочерний селектор
+*/
+.daughter-selector .menu3 a{
+    font-size: 50px;
+    color:violet;
+}
+.daughter-selector .menu3 > a {
+    color: red;
+}
+/*
+Сестренский селектор
+*/
+.sister-selector h3 + .description{
+    color: blueviolet;
+}
+/*
+Общий селектор смежных элементов
+*/
+.sosed-selector h3 ~ .description{
+    color: red;    
+} 
+/*
+Группирующий селектор
+*/
+.group-selector h1, .group-selector h2, .group-selector h3 {
+    color: blue;
+}
+/*
+Селектор атрибута
+*/
+.attribute-selector * {
+    display: block;
+    margin-bottom: 10px;
+}
+.attribute-selector input[type="text"] {
+    width: 150px;
+    background-color: rgb(108, 101, 136);
+}
+.attribute-selector input[type="button"] {
+    background-color: rgb(0, 60, 255);
+}
+.attribute-selector .button[type="textarea"] {
+    border: 1px solid rgb(0, 132, 255);
+}
+.attribute-selector .button[data-foo="bazz"] {
+    border: 1px solid rgb(207, 163, 17);
+    
+}
+/*
+Просто содержит атрибут
+*/
+.attribute-selector a[data-name]{
+    font-size: 30px;
+}
+/*
+Атрибут равен чему-то
+*/
+.attribute-selector a[data-name="dd"]{
+    font-size: 50px;
+}
+/*
+Содержит слово
+*/
+.attribute-selector a[data-name~="aa"]{
+    font-size: 20px;
+}
+/*
+Содержит подстроку
+*/
+.attribute-selector a[data-name*="cc"]{
+    font-weight: 700;
+}
+
+/*
+Начинается с
+*/
+.attribute-selector a[data-name^="dd"]{
+    color:lightcoral;
+}
+/*
+Заканчивается на
+*/
+.attribute-selector a[data-name$="dc"]{
+    color:darkgoldenrod;
+}
