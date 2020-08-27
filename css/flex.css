@@ -1,0 +1,40 @@
+div {
+    box-sizing: border-box;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.hor-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin: 0 -15px;
+}
+.flex-item {
+    background-color: wheat;
+    padding: 0 15px;
+    margin-top: 30px;
+    text-align: center;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+.flex-item__row {
+    -min-height: 33%;
+    flex: 0 0 33%;
+}
+.flex-item__row-first {
+    background-color: cyan;
+}
+.flex-item__row-second {
+    background-color: orange;
+}
+.flex-item__row-third {
+    background-color: yellowgreen;
+}
