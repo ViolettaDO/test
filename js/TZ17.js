@@ -3,12 +3,24 @@ function task_1_do() {
 }
 
 function task_2_do() {
-    task_2_big.value = parseFloat(task_2_one.value) > parseFloat(task_2_two.value) ? task_2_one.value: task_2_two.value;
+    task_2_big.value = MaxOrRandom(parseFloat(task_2_one.value), parseFloat(task_2_two.value));
 }
 function task_3_do() {
-    task_3_big.value = parseFloat(task_3_one.value) > parseFloat(task_3_two.value) ? task_3_one.value: task_3_two.value;
+    task_3_big.value = MaxOrRandom(parseFloat(task_3_one.value), parseFloat(task_3_two.value));
 }
 
+function MaxOrRandom(first, second) {
+    if (first == second)
+        return Math.random() < 0.5 ? first : second;
+    return first > second ? first : second;
+}
+
+
+
 function task_4_do() {
-    task_4_rnd.value = Math.random() * (task_4_up.value - task_4_low.value) + parseFloat(task_4_low.value);
+    task_4_rnd.value = Random(task_4_low.value, task_4_up.value);
+}
+
+function Random(min, max) {
+    return Math.random() * (max - min) + parseFloat(min);;
 }
