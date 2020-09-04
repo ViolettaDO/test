@@ -17,7 +17,7 @@ var a3 = {
 
 for (var a3_key in a3) {
     if (String(a3_key).length > 4)
-        document.getElementById('task_2').value += `${a3_key}
+        document.getElementById('task_2').value += `${a3_key}:${a3[a3_key]}
         `;
 }
 
